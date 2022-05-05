@@ -568,7 +568,7 @@ if sequence in df["Gene"].unique():
     col6, col7, col8, col9, col10 = st.columns((1, 1, 1, 1, 1))
 
     col1.image(image0, use_column_width=True)
-    col6.markdown(f"<h5 style='text-align: center; color: black;'>{family}</h1>", unsafe_allow_html=True)
+    col6.markdown(f"<h5 style='text-align: center; color: white;'>{family}</h1>", unsafe_allow_html=True)
     col2.markdown(f"<h1 style='text-align: center; color: grey;'>+</h1>", unsafe_allow_html=True)
 
 
@@ -577,7 +577,7 @@ if sequence in df["Gene"].unique():
         #st.sidebar.image(image1, width=130)
         col4.markdown(f"<h1 style='text-align: center; color: grey;'>=</h1>", unsafe_allow_html=True)
         col5.image(image1, use_column_width=True)
-        col10.markdown(f"<h5 style='text-align: top; color: black;'>{option}</h1>", unsafe_allow_html=True)
+        col10.markdown(f"<h5 style='text-align: top; color: white;'>{option}</h1>", unsafe_allow_html=True)
 
         option2 = st.sidebar.selectbox(
             'Which family do you want to breed with?',
@@ -587,7 +587,7 @@ if sequence in df["Gene"].unique():
             #st.sidebar.image(image2, width=150)
             col3.image(image2, use_column_width=True)
 
-            col8.markdown(f"<h5 style='text-align: center; color: black;'>{option2}</h1>", unsafe_allow_html=True)
+            col8.markdown(f"<h5 style='text-align: center; color: white;'>{option2}</h1>", unsafe_allow_html=True)
 
             df123 = best_snails(df, df.loc[df["Gene"] == str(sequence), "Snail_No"].iloc[0], 1, 300, 10, option2, option)
 
@@ -628,7 +628,7 @@ if sequence in df["Gene"].unique():
             a = 0
             for i in range(len(df123)):
                 if df123.iloc[i:(i+1), 0:7][f"{option} Rate(%)"].head(1).iloc[0] != 0:
-
+                    st.balloons()
                     col1, col2, col3, col4 = st.columns((1.5, 1, 1, 1))
 
                     text_string_variable = df123.iloc[i:(i+1), 0:7]["P2 Gene"].head(1).iloc[0]
@@ -646,6 +646,7 @@ if sequence in df["Gene"].unique():
                     st.write("  ")
                     st.write("  ")
                     a = 1
+                    
             if a == 0:
                 st.write("No matches found, sorry :(")
 
