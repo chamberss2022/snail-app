@@ -589,7 +589,7 @@ if sequence in df["Gene"].unique():
 
             col8.markdown(f"<h5 style='text-align: center; color: black;'>{option2}</h1>", unsafe_allow_html=True)
 
-            df123 = best_snails(df, df.loc[df["Gene"] == str(sequence), "Snail_No"].iloc[0], 1, 50, 10, option2, option)
+            df123 = best_snails(df, df.loc[df["Gene"] == str(sequence), "Snail_No"].iloc[0], 1, 300, 10, option2, option)
 
             st.write("  ")
             st.write("  ")
