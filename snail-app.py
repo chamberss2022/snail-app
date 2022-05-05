@@ -15,7 +15,7 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 5000)
 pd.set_option('display.max_rows', 5000)
 
-df_ = pd.read_csv(r"C:\Users\baren\PycharmProjects\Chambers\Web Scraping\Snail\SnailTrailDataset.csv")
+df_ = pd.read_csv(r"SnailTrailDataset.csv")
 df = df_.copy()
 ######################
 # Page Title
