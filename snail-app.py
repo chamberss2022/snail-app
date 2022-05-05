@@ -629,7 +629,7 @@ if sequence in df["Gene"].unique():
             for i in range(len(df123)):
                 if df123.iloc[i:(i+1), 0:7][f"{option} Rate(%)"].head(1).iloc[0] != 0:
                     st.balloons()
-                    col1, col2, col3, col4 = st.columns((1.1, 1, 1, 1))
+                    col1, col2, col3, col4 = st.columns((2, 1, 1, 1))
 
                     text_string_variable = df123.iloc[i:(i+1), 0:7]["P2 Gene"].head(1).iloc[0]
                     url_string_variable = f"https://www.snailtrail.art/snails/{df123.iloc[i:(i+1), 0:7]['P2 Nr'].head(1).iloc[0]}/snail"
