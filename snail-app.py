@@ -645,12 +645,13 @@ if sequence in df["Gene"].unique():
             url_string_variable3 = "https://medium.com/@haner11/snail-date-app-via-snail-trail-from-chambers-690a2aee89bc"
             link = f'[{text_string_variable3}]({url_string_variable3} ) '
             st.sidebar.markdown(link, unsafe_allow_html=True)
-           
-        
-            agree = st.sidebar.checkbox('Donate')
             
-            if agree:
-                st.markdown(f"<h1 style='text-align: left; font-size: 10px; color: white;'>0x19035CdeE957f961CC59bA4607c16057e2582e4A</h1>", unsafe_allow_html=True)
+            text_string_variable3= "--Buy us a coffee--"
+            url_string_variable3 = "https://www.buymeacoffee.com/chamberss"
+            link = f'[{text_string_variable3}]({url_string_variable3} ) '
+            st.sidebar.markdown(link, unsafe_allow_html=True)
+            
+            st.sidebar.markdown(f"<h1 style='text-align: left; font-size: 10px; color: white;'>0x19035CdeE957f961CC59bA4607c16057e2582e4A</h1>", unsafe_allow_html=True)
             
             github = Image.open('chambers_logo.png')
             st.sidebar.image(github, width=125)
