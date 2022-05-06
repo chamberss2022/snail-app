@@ -646,7 +646,7 @@ if sequence in df["Gene"].unique():
             link = f'[{text_string_variable3}]({url_string_variable3} ) '
             st.sidebar.markdown(link, unsafe_allow_html=True)
             
-            text_string_variable3= "--Buy us a coffee--"
+            text_string_variable3= "---Buy us a coffee---"
             url_string_variable3 = "https://www.buymeacoffee.com/chamberss"
             link = f'[{text_string_variable3}]({url_string_variable3} ) '
             st.sidebar.markdown(link, unsafe_allow_html=True)
