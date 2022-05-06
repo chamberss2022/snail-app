@@ -589,7 +589,7 @@ if sequence in df["Gene"].unique():
 
             col8.markdown(f"<h5 style='text-align: center; color: white;'>{option2}</h1>", unsafe_allow_html=True)
 
-            df123 = best_snails(df, df.loc[df["Gene"] == str(sequence), "Snail_No"].iloc[0], 1, 1000, 10, option2, option)
+            df123 = best_snails(df, df.loc[df["Gene"] == str(sequence), "Snail_No"].iloc[0], 1, 10, 10, option2, option)
 
             st.write("  ")
             st.write("  ")
@@ -604,32 +604,6 @@ if sequence in df["Gene"].unique():
             st.sidebar.write(" ")
             st.sidebar.write(" ")
             st.sidebar.write(" ")
-
-
-            st.sidebar.write("Made by Chambers")
-            text_string_variable1 = "--------Github--------"
-            url_string_variable1 = "https://github.com/chamberss2022/snail-app"
-            link = f'[{text_string_variable1}]({url_string_variable1} ) '
-            st.sidebar.markdown(link, unsafe_allow_html=True)
-
-            text_string_variable2 = "-------Linkedin------"
-            url_string_variable2 = "https://www.linkedin.com/company/81626136"
-            link = f'[{text_string_variable2}]({url_string_variable2} ) '
-            st.sidebar.markdown(link, unsafe_allow_html=True)
-            
-            text_string_variable3= "-------Medium-------"
-            url_string_variable3 = "https://medium.com/@haner11/snail-date-app-via-snail-trail-from-chambers-690a2aee89bc"
-            link = f'[{text_string_variable3}]({url_string_variable3} ) '
-            st.sidebar.markdown(link, unsafe_allow_html=True)
-            
-            agree = st.sidebar.checkbox('Donate')
-
-            if agree:
-                st.markdown(f"<h1 style='text-align: left; font-size: 10px; color: white;'>0x19035CdeE957f961CC59bA4607c16057e2582e4A</h1>", unsafe_allow_html=True)
-            
-
-            github = Image.open('chambers_logo.png')
-            st.sidebar.image(github, width=125)
 
             a = 0
             for i in range(len(df123)):
@@ -655,8 +629,31 @@ if sequence in df["Gene"].unique():
                     
             if a == 0:
                 st.write("No matches found, sorry :(")
+            
+            st.sidebar.write("Made by Chambers")
+            text_string_variable1 = "--------Github--------"
+            url_string_variable1 = "https://github.com/chamberss2022/snail-app"
+            link = f'[{text_string_variable1}]({url_string_variable1} ) '
+            st.sidebar.markdown(link, unsafe_allow_html=True)
 
-
+            text_string_variable2 = "-------Linkedin------"
+            url_string_variable2 = "https://www.linkedin.com/company/81626136"
+            link = f'[{text_string_variable2}]({url_string_variable2} ) '
+            st.sidebar.markdown(link, unsafe_allow_html=True)
+            
+            text_string_variable3= "-------Medium-------"
+            url_string_variable3 = "https://medium.com/@haner11/snail-date-app-via-snail-trail-from-chambers-690a2aee89bc"
+            link = f'[{text_string_variable3}]({url_string_variable3} ) '
+            st.sidebar.markdown(link, unsafe_allow_html=True)
+           
+        
+            agree = st.sidebar.checkbox('Donate')
+            
+            if agree:
+                st.markdown(f"<h1 style='text-align: left; font-size: 10px; color: white;'>0x19035CdeE957f961CC59bA4607c16057e2582e4A</h1>", unsafe_allow_html=True)
+            
+            github = Image.open('chambers_logo.png')
+            st.sidebar.image(github, width=125)
 
 else:
     st.markdown("""
