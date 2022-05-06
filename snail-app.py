@@ -631,22 +631,22 @@ if sequence in df["Gene"].unique():
                 st.write("No matches found, sorry :(")
             
             st.sidebar.write("Made by Chambers")
-            text_string_variable1 = "--------Github--------"
+            text_string_variable1 = "        Github        "
             url_string_variable1 = "https://github.com/chamberss2022/snail-app"
             link = f'[{text_string_variable1}]({url_string_variable1} ) '
             st.sidebar.markdown(link, unsafe_allow_html=True)
 
-            text_string_variable2 = "-------Linkedin------"
+            text_string_variable2 = "      Linkedin      "
             url_string_variable2 = "https://www.linkedin.com/company/81626136"
             link = f'[{text_string_variable2}]({url_string_variable2} ) '
             st.sidebar.markdown(link, unsafe_allow_html=True)
             
-            text_string_variable3= "-------Medium-------"
+            text_string_variable3= "|      Medium      |"
             url_string_variable3 = "https://medium.com/@haner11/snail-date-app-via-snail-trail-from-chambers-690a2aee89bc"
             link = f'[{text_string_variable3}]({url_string_variable3} ) '
             st.sidebar.markdown(link, unsafe_allow_html=True)
             
-            text_string_variable3= "---Buy us a coffee---"
+            text_string_variable3= "|  Buy us a coffee  |"
             url_string_variable3 = "https://www.buymeacoffee.com/chamberss"
             link = f'[{text_string_variable3}]({url_string_variable3} ) '
             st.sidebar.markdown(link, unsafe_allow_html=True)
